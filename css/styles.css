@@ -1,0 +1,233 @@
+:root {
+	--color-primary-text: #757575;
+	--color-secondary-text: #212121;
+	--color-akcent: #2196f3;
+	--primary-color: #fff;
+	--secondary-backgraund: #2f303a;
+	--color-border: #ececec;
+	--color-background: #f5f4fa;
+	--primary-font-size: 14px;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: var(--primary-color);
+	color: var(--color-primary-text);
+	font-size: var(--primary-font-size);
+	letter-spacing: 0.03em;
+}
+
+/* styles header */
+
+.link-name {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--color-secondary-text);
+	text-decoration: none;
+}
+.span-name {
+	color: var(--color-akcent);
+}
+.nav-link {
+	font-weight: 500;
+	font-size: var(--primary-font-size);
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--color-secondary-text);
+	text-decoration: none;
+}
+.contact {
+	font-family: inherit;
+	font-weight: 500;
+	font-style: normal;
+	font-size: var(--primary-font-size);
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--color-primary-text);
+	text-decoration: none;
+}
+.border-heder {
+	border: 1px solid var(--color-border);
+}
+.nav-item,
+.project-item,
+.project-content,
+.address-item,
+.advantages-item,
+.work-item,
+.team-item {
+	list-style: none;
+}
+.current {
+	color: var(--color-akcent);
+}
+/* styles main Studio */
+.herro-content {
+	background-color: var(--secondary-backgraund);
+}
+.herro-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	width: 696px;
+}
+.herro-bth {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	text-align: center;
+	letter-spacing: 0.06em;
+	background-color: var(--color-akcent);
+	color: var(--primary-color);
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	width: 200px;
+}
+.herro-bth:hover,
+.herro-bth:focus {
+	background: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.advantages-title {
+	font-weight: 700;
+	font-size: var(--primary-font-size);
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--color-secondary-text);
+}
+.advantages-content {
+	line-height: 24px;
+	width: 270px;
+}
+.team {
+	background-color: var(--color-background);
+}
+.work-title,
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	color: var(--color-secondary-text);
+}
+.team-person {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	color: var(--color-secondary-text);
+}
+.team-positions {
+		font-size: 16px;
+	line-height: 1.18;
+	}
+.team-link {
+	text-decoration: none;
+	display: block;
+	width: 270px;
+}
+/* styles main Portfolio */
+.project-btn {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: inherit;
+	color: var(--color-secondary-text);
+	background-color: var(--color-background);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.project-btn:hover,
+.project-btn:focus {
+	color: var(--primary-color);
+	background-color: var(--color-akcent);
+	outline: none;
+}
+.project-link {
+	text-decoration: none;
+	display: block;
+}
+.project-title {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--color-secondary-text);
+}
+
+.project-link:hover,
+.project-link:focus,
+.project-view:hover,
+.project-view:focus,
+.project-title:hover,
+.project-title:focus {
+	color: var(--color-akcent);
+}
+.project-content {
+	width: 370px;
+	border: 1px solid #eeeeee;
+}
+.project-view {
+	font-size: 16px;
+	line-height: 1.87;
+	color: var(--color-primary-text);
+}
+
+/* styles footer */
+.footer {
+	background-color: var(--secondary-backgraund);
+}
+.address > li,
+a {
+	font-style: normal;
+}
+.footer-linkname {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: inherit;
+	color: var(--primary-color);
+	text-decoration: none;
+}
+.contact-map {
+	line-height: 1.71;
+	color: var(--primary-color);
+	text-decoration: none;
+}
+.address-item .contact {
+	font-weight: 400;
+	line-height: 1.71;
+	letter-spacing: inherit;
+	color: rgba(255, 255, 255, 0.6);
+}
+.nav-link:hover,
+.nav-link:focus,
+.contact:hover,
+.contact:focus,
+.contact-map:hover,
+.contact-map:focus {
+	color: var(--color-akcent);
+	outline: none;
+}
