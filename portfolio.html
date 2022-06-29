@@ -5,6 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Портфолио</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,23 +22,28 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="nav">
-				<a href="./index.html" class="link-name" lang="en">
-					<span class="span-name">Web</span>Studio</a>
+			<div class="container">
+			<div class="heder-linkinline">
+				<nav class="nav">
+					<a href="./index.html" class="link-name" lang="en">
+						<span class="span-name">Web</span>Studio</a>
+					<ul class="nav-list">
+						<li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+						<li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+						<li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+					</ul>
+				</nav>
 				<ul class="nav-list">
-					<li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-					<li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-					<li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+					<li class="nav-item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+					<li class="nav-item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
 				</ul>
-			</nav>
-			<ul class="nav-list">
-				<li class="nav-item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-				<li class="nav-item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
-			</ul>
-            <div class="border-heder"></div>
+			</div>
+			
+			</div>
 		</header>
+		<div class="border-header"></div>
 		<main>
-			<section class="project">
+			<section class="project-container">
 				<h1 class="visually-hidden">Filter portfolio</h1>
 				<ul class="project-btnfilter">
 					<li class="project-item"><button type="button" class="project-btn">Все</button></li>
@@ -108,24 +120,26 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<a href="./index.html" class="footer-linkname" lang="en">
-				<span class="span-name">Web</span>Studio</a>
-			<address class="address">
-				<ul class="address-list">
-					<li class="address-item">
-						<a
-							href="https://goo.gl/maps/BLAasnfPhCkBfBhN9"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="contact-map"
-						>
-							г. Киев, пр-т Леси Украинки, 26
-						</a>
-					</li>
-					<li class="address-item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-					<li class="address-item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
-				</ul>
-			</address>
+			<div class="container">
+				<a href="./index.html" class="footer-linkname" lang="en">
+					<span class="span-name">Web</span>Studio</a>
+				<address class="address">
+					<ul class="address-list">
+						<li class="address-item">
+							<a
+								href="https://goo.gl/maps/BLAasnfPhCkBfBhN9"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="contact-map"
+							>
+								г. Киев, пр-т Леси Украинки, 26
+							</a>
+						</li>
+						<li class="address-item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+						<li class="address-item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
