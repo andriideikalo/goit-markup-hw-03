@@ -83,7 +83,6 @@ ul {
 .border-header {
 	border: 1px solid var(--color-border);
 	margin: 0 auto;
-	margin-bottom: 94px;
 }
 .team-content {
 	margin-bottom: 30px;
@@ -202,7 +201,7 @@ ul {
 .work-item:not(:last-child) {
 	margin-right: 30px;
 }
-.team {
+.section {
 	padding: 94px 0;
 }
 .team-person {
@@ -257,7 +256,7 @@ ul {
 .project-filter {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 94px;
+	justify-content: center;
 }
 .project-btn:not(:last-child) {
 	margin-right: 8px;
