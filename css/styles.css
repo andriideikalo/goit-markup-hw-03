@@ -6,6 +6,7 @@
 	--secondary-backgraund: #2f303a;
 	--color-border: #ececec;
 	--color-background: #f5f4fa;
+	--color-btn-hover:#188ce8;
 	--primary-font-size: 14px;
 }
 
@@ -96,17 +97,8 @@ a {
 .header {
 	border-bottom: 1px solid var(--color-border);
 }
-.team-content {
-	margin-bottom: 30px;
-}
-.team-person {
-	margin-bottom: 10px;
-	text-align: center;
-}
-.team-positions {
-	margin-bottom: 30px;
-	text-align: center;
-}
+
+
 
 .nav-item:not(:last-child) {
 	margin-right: 50px;
@@ -150,7 +142,7 @@ a {
 }
 .herro-bth:hover,
 .herro-bth:focus {
-	background: #188ce8;
+	background: var(--color-btn-hover);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .visually-hidden {
@@ -211,13 +203,16 @@ a {
 	font-size: 16px;
 	line-height: 1.18;
 	color: var(--color-secondary-text);
+		margin-bottom: 10px;
+	text-align: center;
 }
 .about-team {
-	padding: 30px;
+	padding: 30px 0;
 }
 .team-positions {
 	font-size: 16px;
 	line-height: 1.18;
+		text-align: center;
 }
 .team-item:not(:last-child) {
 	margin-right: 30px;
@@ -293,6 +288,7 @@ a {
 }
 .project-about {
 	border: 1px solid #eeeeee;
+	border-top: none;
 	padding: 20px 24px;
 }
 .project-content:nth-child(3n + 3) {
@@ -331,10 +327,9 @@ a {
 .address {
 	margin-top: 20px;
 }
-.address-item .contact {
+.address-item {
 	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: inherit;
 	color: rgba(255, 255, 255, 0.6);
 }
 .address-item {
@@ -343,12 +338,18 @@ a {
 .address-item:last-child {
 	margin-bottom: 0;
 }
+.contact-footer {
+	font-size: var(--primary-font-size);
+	color: rgba(255, 255, 255, 0.6);
+}
 .nav-link:hover,
 .nav-link:focus,
 .contact:hover,
 .contact:focus,
 .contact-map:hover,
-.contact-map:focus {
+.contact-map:focus,
+.contact-footer:hover,
+.contact-footer:focus  {
 	color: var(--color-akcent);
 	outline: none;
 }
